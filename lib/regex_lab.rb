@@ -13,6 +13,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
 text
+text.scan(^[A-Z].+\.$).any?
 end
 
 def valid_phone_number?(phone)
