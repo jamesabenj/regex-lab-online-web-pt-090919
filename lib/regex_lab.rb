@@ -17,5 +17,5 @@ text.scan(/^[A-Z].+\.$/).any?
 end
 
 def valid_phone_number?(phone)
-
+text.scan(/.?\d{3}.?\d{3}.?\d{4}/).any?
 end
